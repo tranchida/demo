@@ -1,9 +1,7 @@
 package ch.tranchida.demo;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.TreeMap;
-
 import org.apache.camel.Exchange;
 import org.apache.camel.Message;
 import org.apache.camel.Processor;
@@ -18,7 +16,7 @@ public class SampleProcessor implements Processor {
         Message in = exchange.getIn();
         String data = in.getHeader("data", String.class);
 
-        Map<String,String> map = new TreeMap<>();
+        Map<String,String> map = new LinkedHashMap<>();
         map.put("message", "rest is cool");
         map.put("data", data);
         exchange.getIn().setBody(map);
