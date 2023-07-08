@@ -10,7 +10,7 @@ public class SampleProcessor implements Processor {
     @Override
     public void process(Exchange exchange) throws Exception {
         
-        exchange.getIn().setBody("{ \"data\": \"Hello " + exchange.getIn().getHeader("data", String.class) + "\"}");
+        exchange.getIn().setBody("{ \"data\": \"Bonjour " + exchange.getIn().getHeader("data", String.class) + "\"}");
 
     }
     
