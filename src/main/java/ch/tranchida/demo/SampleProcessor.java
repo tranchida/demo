@@ -17,8 +17,8 @@ public class SampleProcessor implements Processor {
         String data = in.getHeader("data", String.class);
 
         Map<String,String> map = new LinkedHashMap<>();
-        map.put("message", "rest is cool");
         map.put("data", data);
+        map.put("message", "rest is cool");
         exchange.getIn().setBody(map);
 
     }
