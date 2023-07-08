@@ -32,13 +32,19 @@
 
 		<dependency>
 			<groupId>org.apache.camel.springboot</groupId>
-			<artifactId>camel-timer-starter</artifactId>
+			<artifactId>camel-platform-http-starter</artifactId>
 			<version>4.0.0-RC1</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.camel.springboot</groupId>
-			<artifactId>camel-cxf-rest-starter</artifactId>
+			<artifactId>camel-rest-starter</artifactId>
+			<version>4.0.0-RC1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.camel.springboot</groupId>
+			<artifactId>camel-openapi-java-starter</artifactId>
 			<version>4.0.0-RC1</version>
 		</dependency>
 
